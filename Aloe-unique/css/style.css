@@ -1,0 +1,696 @@
+
+/* Fonts style */
+
+@font-face {
+    font-family: 'Gotham Book Italic';
+    src: url('../fonts/GothamBook-Italic.eot');
+    src: url('../fonts/GothamBook-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamBook-Italic.woff2') format('woff2'),
+        url('../fonts/GothamBook-Italic.woff') format('woff'),
+        url('../fonts/GothamBook-Italic.ttf') format('truetype'),
+        url('../fonts/GothamBook-Italic.svg#GothamBook-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Gotham HTF Book';
+    src: url('../fonts/GothamHTF-Book.eot');
+    src: url('../fonts/GothamHTF-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamHTF-Book.woff2') format('woff2'),
+        url('../fonts/GothamHTF-Book.woff') format('woff'),
+        url('../fonts/GothamHTF-Book.ttf') format('truetype'),
+        url('../fonts/GothamHTF-Book.svg#GothamHTF-Book') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham HTF Medium';
+    src: url('../fonts/GothamHTF-Medium.eot');
+    src: url('../fonts/GothamHTF-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamHTF-Medium.woff2') format('woff2'),
+        url('../fonts/GothamHTF-Medium.woff') format('woff'),
+        url('../fonts/GothamHTF-Medium.ttf') format('truetype'),
+        url('../fonts/GothamHTF-Medium.svg#GothamHTF-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/GothamBook.eot');
+    src: url('../fonts/GothamBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamBook.woff') format('woff'),
+        url('../fonts/GothamBook.ttf') format('truetype'),
+        url('../fonts/GothamBook.svg#GothamBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham HTF Bold';
+    src: url('../fonts/GothamHTF-Bold.eot');
+    src: url('../fonts/GothamHTF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamHTF-Bold.woff') format('woff'),
+        url('../fonts/GothamHTF-Bold.ttf') format('truetype'),
+        url('../fonts/GothamHTF-Bold.svg#GothamHTF-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.eot') format('embedded-opentype');
+    src:  url('../fonts/') format('woff'), url('../fonts/Montserrat-Light.ttf')  format('truetype'), url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* // End Fonts style */
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+img{
+    float: left;
+}
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+/*a:hover{text-decoration: underline; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}*/
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: rgb(255,255,255); color:  #1a1a1a; -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto;  font-family: 'Gotham HTF Book'; font-style: normal; font-weight: normal;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+
+
+/*=============================End home Page==================================*/
+.page-wrap{ float: left; width: 100%;background: #ffffff; position: relative; padding-bottom: 50px; overflow-x: hidden;}
+.main-header{float: left; width: 100%;background: #ffffff; position: relative;}
+.common-wrap{ margin: 0 auto; max-width: 996px;clear: both; width: 100%; position: relative}
+.main-logo{width:211px; height: 144px; margin: 0 auto; clear: both; overflow: hidden;}
+.main-logo img{ float:left; width: 100%;}
+.top-social-icon{ float: left; width: 48px; position: absolute; left: 15px; top: 21px;}
+.social-image{ float: left; width: 20px; display: inline-block; margin-left: 6px;}
+.top-social-icon .social-image:first-child{ margin-left: 0px; margin-top: 2px;}
+.social-image img{ float: left; width: 100%;}
+.card-section{ float: right; width: auto; position: absolute; top: 21px; right: 15px;}
+.card-section a{ float: left; width:100%; display: inline-block;text-decoration: none;}
+.card-icon{ float: left; width:17px; margin-top: 5px; margin-right: 5px}
+.card-icon img{ float: left; width:100%;}
+.card-section a span{ display: inline-block; text-transform: uppercase; color: #8d8d8d; font-size: 14px; line-height: 17px;}
+.main-nav{ float: left;width: 100%; }
+.main-nav ul{ list-style: none; margin: 0; padding: 0;}
+.main-nav li{ float: left; margin-left:47.7px;}
+.main-nav li:first-child{ margin-left:0px;}
+.main-nav li a{ float: left; font-size: 14px; line-height: 17px; text-decoration: none; color: #71806C; line-height: 18px;}
+.main-nav{ float: left;width: 100%;}
+.phone-nav{position: absolute; right: 15px; top: 18px; width: 23px; display: none;}
+.phone-nav div{float: left; width: 23px; height: 2px; margin: 3px 0; background: #000000;}
+/*==============================End Header Section ======================================*/
+
+/*==============================Beginning Home Page======================================*/
+.page-details-section{ float: left; width: 100%; margin-top: 12px;}
+#about-aloe{margin-top: 20px;}
+.about-us{margin-top: 18px;}
+.about-us .why-nav{padding-top: 35px; min-height: 312px;}
+.about-us .why-nav li a{padding: 0px 0 0px 21px;}
+
+.slider-section{ float: left; width: 100%; position: relative;}
+.slider-section img{width: 100%;}
+.slider-section:before,.slider-section:after{position: absolute; left: -68px; top: 50%; /*margin-top: -26.5px;*/ width: 53px; height: 53px; content: ""; background: url(../images/arrow-left.png) no-repeat 0 0; background-size: contain; cursor: pointer;}
+.slider-section:after{right: -68px; background: url(../images/arrow.png) no-repeat 0 0; left: auto; background-size: contain;}
+.slider-caption{position: absolute; left: 50%; top: 43%; transform: translate(-50%, -50%); text-align: center;}
+.slider-caption h2{font-size: 36px; line-height: 42px; color: #ffffff; font-family: 'Gotham HTF Book'; font-weight: normal; text-transform: capitalize;}
+.slider-caption p{font-size: 18px;  line-height: 1.44; color: #ffffff; font-family: 'Gotham HTF Medium'; font-weight: 500; padding-top: 35px;}
+.slider-section ol{margin: 0; padding: 0; position: absolute; left: 0; bottom: 38px; text-align: center; width: 100%;}
+.slider-section ol li{display: inline-block; vertical-align: middle; width: 10px; height: 10px; border-radius: 50px; background: #ffffff; margin: 0 0.5px; cursor: pointer;}
+.slider-section ol li.active{background: #a2ae9f;}
+
+.top-sellers{ float:left; width: 100%; margin-top: 52px; display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap; -webkit-align-items: baseline; align-items: baseline;}
+.top-seller-title,.discover-title{ float:left; width: 100%; text-align: center; font-size: 24px; line-height: 28px;color: #71806C; flex: 1 100%;}
+.main-nav{ float: left;width: 100%;}
+.top-seller-item{max-width: 134px; width:12.76381909547739%; margin: 0 4.14572864321608%; display: inline-block; vertical-align: bottom; /*float: left;*/}
+.top-seller-item:nth-child(2){ margin-left: 0px; }
+.top-seller-item:nth-child(4){width: 15.37688442211055%; margin-right: 5.678391959798995%;}
+.top-seller-item:last-child{margin-right: 0;}
+.top-seller-item img{ float: left; width: 100%;}
+.sell-rate{ float:left; width: 100%; display: inline-block;margin-top: 10px; vertical-align: top; clear: both; color: #424534;}
+.sell-rate span{ float: left;width: 100%;display:inline-block; font-size: 14px; line-height: 16px; text-transform: uppercase;}
+.sell-rate cite{ float: left; width: 100%; display: inline-block;font-style: normal; font-size: 14px; line-height: 16px;}
+.sell-rate dfn{ float: left; width: 100%; display: inline-block;font-style: normal; font-size: 14px; line-height: 16px; font-family: 'Gotham HTF Medium'; font-weight: 500; font-style: normal;}
+top-seller-image{margin: 0 auto; clear: both; overflow: hidden;}
+.top-sellers .top-seller-item:nth-child(2) .top-seller-image{ max-width: 124px;}
+.top-sellers .top-seller-item:nth-child(3) .top-seller-image{ max-width: 82px;}
+.top-sellers .top-seller-item:nth-child(4) .top-seller-image{ max-width: 101px;}
+.top-sellers .top-seller-item:nth-child(5) .top-seller-image{ max-width: 96px;}
+.top-sellers .top-seller-item:nth-child(6) .top-seller-image{ max-width: 140px;}
+.disconer-aloe-unique{ float: left; width: 100%; margin-top: 20px;}
+.discover-item-wrap{ float: left;/*max-width: 317px;*/ width:31.82730923694779%; margin:2.108433734939759% 0 0 2.108433734939759%; }
+.discover-item-wrap:nth-child(1){margin-left: 0px;}
+.discover-sub-item, .unique-vision{ float: left; width: 100%; margin-top:6.309148264984227%; position: relative}
+.discover-sub-item img{ float: left; width: 100%;}
+.vision-title{ text-align: center;padding-top: 38px; line-height: 26px; font-size: 16px; font-family: 'Gotham HTF Medium'; font-weight: 500; font-style: normal; color: #5e7360;}
+.unique-vision p{ text-align: center; padding: 18px 27px 0 27px; font-size: 14px; line-height: 25px; color: #5e7360; /*font-family: 'Gotham HTF Book';*/ font-family: 'Gotham Book'; font-weight: normal; font-style: normal;}
+.unique-vision a{ text-decoration: none;text-align: center; width:100%;font-size: 14px; padding-top: 13px; display: inline-block; clear: both; color: #5e7360; font-style: normal; font-family: 'Gotham HTF Medium'; font-weight: 500;}
+.discover-overlay,.discover-overlay-2{ position: absolute; left:50%; top: 50%; width: 100%; transform: translate(-50%,-50%);opacity: 1; text-align: center; width: 100%; display: inline-block;color: #71806C; padding: 0 43px}
+.unique-vision a:hover {text-decoration: underline;}
+.discover-aloe-unique{ float: left; width: 100%; margin-top: 6px; display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap;}
+.discover-aloe-unique .discover-item-wrap:nth-child(2) .discover-overlay{ top: 50%}
+.discover-aloe-unique .discover-item-wrap:nth-child(2) .discover-sub-item .discover-overlay-2{ padding: 0 89px; font-family: 'Gotham HTF Medium'; font-weight: 500; line-height: 1.63;}
+.discover-aloe-unique .discover-item-wrap:nth-child(3) .discover-overlay{ top: 50%}
+.discover-aloe-unique .discover-item-wrap:nth-child(3) .discover-overlay{text-transform: uppercase; color: #ffffff; font-size: 24px; line-height: 27px; font-family: 'Gotham HTF Bold'; font-weight: bold; font-style: normal; text-align: left; bottom: 22px; top: auto; left: 30px; -webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0); padding: 0; padding-right: 20px;}
+.discover-aloe-unique .discover-item-wrap:nth-child(3) .discover-sub-item .discover-overlay-2{ color: #ffffff; font-family: 'Gotham HTF Medium'; font-weight: 500; font-style: normal; }
+.discover-image{ float: left; width: 100%; position: relative}
+.discover-item-wrap .discover-image:hover .discover-overlay,.discover-sub-item:hover .discover-overlay-2{ opacity: 1}
+.discover-image img{ float: left; width: 100%;}
+.discover-aloe-unique .discover-item-wrap:nth-child(3) .discover-overlay dfn{font-family: 'Gotham HTF Medium'; font-weight: 500; font-style: normal;}
+/*==============================End Home Page======================================*/
+
+/*==============================Beginning About Aloe Page======================================*/
+.thrive-regenerat,.about-right-image,.our-mission-value,.our-core-nav{ float: left; width: 100%;}
+.why-aloe{ float: left; width: 318px; }
+.why-nav{ float: left; width: 100%;background:#8b9988;; padding-top: 15px;}
+.why-nav ul{ list-style: none; margin: 0; padding: 0;}
+.why-nav li{ float: left; width:100%; margin-bottom: 9px; display: inline-block; position: relative;}
+.why-nav li a{ float: left; width:100%; display:inline-block;font-size: 16px;padding:10px 0 10px 21px; line-height: 25px; color: #ffffff;font-family: 'Gotham HTF Book';font-weight: normal;font-style: normal;font-stretch: normal;}
+.why-nav li:after{ position: absolute; left: 0; bottom:-9px; content: ""; width: 100%; height: 1px; background: #fffcfc;;z-index: 10;opacity: 0;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;transition:all .3s ease-in-out; }
+.why-nav li:hover:after{ opacity: 1;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;transition:all .3s ease-in-out;}
+.thrive-image,.about-us-right{ float: left; max-width: 656px; width:65.86345381526104%; margin-left: 2.068273092369478%; position: relative; }
+.thrive-image img,.about-right-image img,.mask-image img{ float: left; width: 100%;}
+.overlay-text{position: absolute; left: 50%; top: 37px; -webkit-transform: translate(-50%); -moz-transform: translate(-50%); transform: translate(-50%); font-size: 16px; line-height: 1.63; text-align: center; color: #61745d; font-family: 'Gotham HTF Bold'; font-weight: bold; font-style: normal;}
+/*==============================End About Aloe Page======================================*/
+
+/*=============================Beginnin About Us page=========================*/
+.about-right-image{ background: url(../images/about-banner.jpg) no-repeat 0 0; background-size: cover; min-height: 181px;}
+.about-right-title{ margin: 0 auto; max-width: 419px;width:63.8719512195122%; padding-top: 55px; clear: both}
+.about-right-title > div,.aloe-unique-right div { text-align: center;font-family: 'Gotham HTF Book'; font-weight: 500; font-style: normal; font-size: 18px; font-style: normal; font-stretch: normal; line-height: 1.44;  color: #ffffff;}
+.distributers-right{ background: url(../images/aloe-uninique-banner.jpg) no-repeat 0 0; background-size: cover; min-height: 181px;}
+.distributers-right .about-right-title{padding-top: 70px; }
+.map-image{ float:left; width: 100%;margin-top: 18px;}
+.map-image img{ float:left; width: 100%;}
+.outlet-below{ float:left; width: 100%;margin-top: 24px; font-size: 14px;font-family: 'Gotham HTF Book'; font-weight: bold; font-style: normal; font-stretch: normal; text-align: left;color: #61745d;  line-height: 1.64;}
+.our-mission-value{ padding: 22px 48px 33px 45px; background:#d1e1d7; margin-top: 19px;}
+.mission-value-text{ float: left;width: 100%; /*margin-top: 17px;*/}
+.mission-value-text h4{ float: left; width: 100%;font-size: 24px;line-height: 28px;font-family: 'Gotham HTF Book';font-weight: normal; font-style: normal; color: #63755f;}
+.mission-value-text h6{ float: left; width: 100%;font-size: 14px;color: #61745d;  line-height: 1.43; font-family: 'Gotham HTF Book'; font-weight: bold; font-style: normal; }
+.mission-value-text p{ float: left; margin-top: 20px; width: 100%;font-size: 14px;color: #61745d;  line-height: 1.43; font-family: 'Gotham HTF Book'; font-weight: normal; font-style: normal; letter-spacing: .5px;}
+.our-mission-value{ padding: 22px 48px 50px 45px; background: #ECEFEC;}
+.our-mission-value h6{ float: left; margin: 15px 0 20px 0; width: 100%;font-size: 14px;color: #61745d;  line-height: 1.43; font-family: 'Gotham HTF Book'; font-weight: bold; font-style: normal;}
+.mission-value-text h6{ margin-bottom: 0px;}
+.our-core-nav ul{list-style: none; margin: 0;padding: 0;}
+.our-core-nav li { float: left; width: 100%;font-size: 14px;color: #61745d;  line-height: 1.43; font-family: 'Gotham HTF Book'; font-weight: normal; font-style: normal;}
+.our-core-nav li span{ float: left; margin-right: 20px; width: auto; display: inline-block;color: #61745d;}
+.our-core-nav li div{ float: left; width: 90%;font-size: 14px;color: #61745d;  line-height: 1.43; font-family: 'Gotham HTF Book'; font-weight: normal; font-style: normal;}
+.mask-image{ float: left; width: 100%; margin-top: 20px;}
+.our-heritage-section{ float: left;width: 100%; margin-top: 36px;}
+.heritage-content{ float: left; max-width: 571px; width:57.32931726907631%;margin-left: 4.216867469879518%}
+.heritage-content h4,.aloe-unique-feature h4{ float: left; width: 100%; font-size: 24px;font-family: 'Gotham HTF Book';  font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.17; color: #63755f;}
+.heritage-content p{ float: left; margin-top: 15px; width: 100%; font-size: 14px;font-family: 'Gotham HTF Book'; font-weight: normal; font-style: normal; font-stretch: normal; color: #61745d; line-height: 20px;}
+.heritage-image{ float: right; max-width: 367px; width: 36.84738955823293%;margin-left: 1.6%; padding-top: 14px;}
+.heritage-image .heritage-item-image:nth-child(2){max-width: 176px;}
+.heritage-item-image{ float: left; max-width: 190px; width: 100%;}
+.heritage-item-image img{ float: left; width: 100%;}
+.about-us .common-wrap .why-aloe-ferox{ margin-top: 47px}
+.shop-now-section{ float: left; width: 100%; margin-top: 20px}
+.shop-now-announce{ float: left; max-width: 488px; width:48.99598393574297%; background: url(../images/about_shop_now.png) no-repeat center top;background-size: cover; min-height: 202px;}
+.shop-now-announce img{ float: left; width:100%;}
+.announce-tex-wrap{ float: left;width: 100%; text-align: center; clear: both; margin-top: 30px;}
+.announce-tex-wrap span{width: 100%; display: block;text-align: center; text-transform: uppercase;clear: both;font-family: 'Gotham HTF Book'; font-size: 14px; font-weight: bold; font-style: normal; line-height: 1.71; color: #ffffff;}
+.announce-tex-wrap h4,.aloe-unique-feature h4{width: 100%;text-align: center;font-size: 24px;font-family: 'Gotham HTF Book';  font-weight: bold; font-style: normal;  line-height: 1.17;text-transform: uppercase;color: #ffffff; }
+.announce-tex-wrap h4{ font-size: 20px; line-height: 24px; padding: 9px 0}
+.aloe-unique-feature{float:left;width: 100%; padding: 23px 115px 23px 37px; background: #E3EFE1; margin-top: 52px}
+.aloe-unique-feature p{float:left; margin-top: 19px; width: 100%; float: left; color: #61745d; font-size: 14px;  line-height: 1.43;font-family: 'Gotham HTF Book';font-weight: normal;font-style: normal;font-stretch: normal;}
+.aloe-unique-feature p span{display: block; clear: both;}
+.aloe-unique-feature h4{ text-align: left; text-transform: capitalize; color: #63755f;}
+.announce-tex-wrap a{text-align: center; display: inline-block; margin-top: 10px; clear: both;width: 156px; height: 54px; line-height: 54px; font-size: 20px;font-family: 'Gotham HTF Book';  font-weight: bold; color: #ffffff; background:#596c4b;}
+.shop-now-products{ float: left; max-width: 408px; width: 40.96385542168675%; margin-left:4.116465863453815%; padding-top: 30px}
+.shop-now-products h4,.manufacturing-nav h4{ float: left; width:100%;font-family: 'Gotham HTF Book'; font-size: 24px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 28px; color: #63755f;  }
+.shop-now-nav{ float: left; width: 100%; margin-top: 20px;}
+.shop-now-nav ul,.manufacturing-nav ul{list-style: none; margin: 0; padding: 0;}
+.shop-now-nav li,.manufacturing-nav li{ float: left; width: 100%;font-size: 14px;font-family: 'Gotham HTF Book'; font-weight: normal; font-style: normal; line-height: 1.43; color: #61745d; background: url(../images/unique-dot-icon.png) no-repeat 0 8px; padding-left: 19px;}
+.manufacturin-quality-section{ float: left; width: 100%; margin-top: 35px; padding-bottom: 10px;}
+.manufacturing-nav{ float: left; max-width: 588px; width: 59.03614457831325%; margin-left: 3.313253012048193%; margin-bottom: 20px; padding-top: 5px;}
+.manufacturing-nav li{ padding-left: 27px;}
+.quality-image{ float: right; max-width: 319px; width: 32.0281124497992%;}
+.quality-image img{ float: left; width:100%;}
+.manufacturing-nav h4{ padding-bottom: 25px; padding-left: 20px;}
+/*=============================End About Us page =========================*/
+
+/*=============================Beginning Distributers Page =========================*/
+.region-section{ float: left; width: 100%; margin-top: 27px;}
+.region-section:nth-child(3){margin-top: 48px; padding-bottom: 35px;}
+.region-title{ float: left; width: 100%; text-transform: uppercase;font-family: 'Gotham HTF Book'; font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; color: #61745d;}
+.region-item{ float: left; max-width: 166px; width:16.66666666666667%; margin-top: 26px; padding-left: 57px; }
+.region-item span,.region-item a{ text-align: center;font-size: 16px;font-family: 'Gotham HTF Book'; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.63; text-align: center; color: #61745d;}
+.region-item a{ text-align: center; text-decoration: none;color: #61745d;}
+
+/*=============================End Distributers Page  =========================*/
+/*=============================Beginning Product Page =========================*/
+.aside-product-accordian{ float: left; max-width: 160px; width:16.06425702811245%; margin-top: 18px; }
+.aside-product{ float: left; width:100%; margin-bottom:22px;  }
+.aside-title { float: left; width:100%; text-transform: uppercase;  font-size: 18px;font-family: 'Gotham HTF Book'; font-weight: normal; font-style: normal; font-stretch: normal; color: #61745d;line-height: 22px; background: url(../images/Group%20Copy.png) no-repeat right 0; background-size: contain; padding: 3px 0; max-width: 145px;}
+ul.product-nav{float: left; width: 100%; margin-top:8px; list-style: none; padding: 0; display: none;}
+.aside-product:first-child ul.product-nav{display: block;}
+.product-top-sellers .top-seller-item:nth-child(2) .top-seller-image{max-width: 85px;}
+.product-nav li{float: left; width: 100%;}
+.product-nav li a{ float: left; text-decoration: none;width: 100%;font-family: 'Gotham HTF Book'; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.84; color: #61745d;}
+.active .aside-title{ background: url(../images/Group.png) no-repeat right 0; background-size: contain;}
+.product-right-section{ float:left;max-width: 818px; width:82.1285140562249%;margin-left:1.807228915662651%;}
+.product-hero-slider{ float: left;  width: 100%; }
+.slider-product{ float: left; width: 100%; background: url(../images/products-hero.jpg) no-repeat center 0; background-size: cover;min-height: 561px;}
+.aloe-unique-tab{ float: left; width: 100%; margin-top: 33px;}
+.tab-title{ float: left; width: 100%; text-align: center; font-size: 16px;font-family: 'Gotham HTF Book'; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.63; color: #61745d;}
+.aloe-tab-nav{ float: left; width: 100%; margin-top: 30px;}
+.aloe-tab-nav ul{list-style: none; margin: 0; padding: 0;}
+.aloe-tab-nav li{float: left; width: auto; margin-left: 12px;padding: 23px 44.5px 26px 44.5px;line-height: 22px; font-size: 18px; font-family: 'Gotham HTF Book';font-weight:500;font-style: normal;font-stretch: normal;color: #61745d; text-transform: uppercase; border: 1px solid #61745d;}
+.aloe-tab-nav li:first-child{ margin-left: 0px;}
+.product-top-sellers .top-seller-item{ max-width: 196.5px; width:24.38875305623472%; margin: 0 0.3056234718826406%; }
+.product-top-sellers .top-seller-item:nth-child(2){ margin-left: 0px;}
+
+.product-top-sellers .top-sellers .top-seller-item:nth-child(2) .top-seller-image{ max-width: 82px;}
+.product-top-sellers .top-sellers .top-seller-item:nth-child(3) .top-seller-image{ max-width: 101px;}
+.product-top-sellers .top-sellers .top-seller-item:nth-child(4) .top-seller-image{ max-width: 96px;}
+.product-top-sellers .top-sellers .top-seller-item:nth-child(6) .top-seller-image{ max-width: 140px;}
+.product-top-sellers .top-seller-title{ text-transform: uppercase;}
+.product-top-sellers{padding-bottom: 65px;}
+/*=============================End Product Page =========================*/
+
+/*=============================Beginning Facial Wash Page =========================*/
+.social-wash-right{ float: left; max-width: 712px; width:71.4859437751004%; margin-left:11.44979919678715%;}
+.facial-image{ float: left; width: 147px; margin:54px 0 0 48px;}
+.facial-image img{ float: left; width: 100%;}
+.facial-150ml-bottle{ float: right; max-width: 377px; width: 52.94943820224719%;margin-top: 77px;}
+.facial-150ml-bottle span{ float: left; width: 100%;font-size: 16px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 26px;color: #61745d;font-family: 'Gotham HTF Book'; }
+.facial-150ml-bottle p{ float: left; margin-top: 15px; width: 100%;font-family: 'Gotham HTF Book'; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.57; color: #61745d;}
+.facial-150ml-bottle a{ text-decoration: none;  color: #61745d; display: inline-block; font-weight: bold; margin-left: 5px;}
+.facial-150ml-bottle a:hover{ text-decoration:underline; }
+.price-card{ float: left; width: 100%; margin-top:15px;}
+.price-card span{ float: left; width: 100%;font-family: 'Gotham HTF Book'; font-size: 14px;font-weight: 500;font-style: normal;font-stretch: normal;color: #424534;}
+.price-card a{ text-align: center; margin:10px 0 0 0; display: inline-block;width: 125px; height: 38px; line-height: 38px; border: 1px solid  #61745d; text-transform: uppercase;font-family: 'Gotham HTF Book'; font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; color: #61745d;}
+.washing-content-section{ float: left; width: 100%; padding-top: 22px;}
+.application-text{ float: left; width: 100%;}
+.washing-content-section span{ float: left; width: 100%; font-size: 14px;font-family: 'Gotham HTF Book';font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.57;color: #61745d;}
+.washing-content-section p,.leaf-extraxt-nav li,.dea-nav li,.tocophery-nav li{ float: left;  width: 100%;font-family: 'Gotham HTF Book';font-size: 14px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.43;color: #61745d;}
+.application-text p{ margin-top: 7px; }
+.active-ingredients{ float: left; width: 100%; padding-top: 15px;}
+.active-ingredients span, .tocophery-nav, .ingredients-aqua, .dea-nav{ float: left; width: 100%; margin-top:10px;}
+.leaf-extraxt-nav{ float: left;; width: 100%; margin-top: 20px;}
+.leaf-extraxt-nav ul,.dea-nav, .tocophery-nav ul{ list-style: none; margin: 0; padding: 0;}
+.dea-nav,.ingredients-aqua{padding-top: 10px;}
+
+/*=============================End Facial Wash Page =========================*/
+
+/*=============================Beginnin why-aloe-ferox section=========================*/
+.why-aloe-ferox{ float:left;width: 100%; padding: 68px 45px 0px 52px; background: #E3EFE1; margin-top: 19px; position: relative;}
+.why-aloe-ferox .title{position: relative; /*left: 52px; top: 79px;*/ font-size: 24px; color: #61745d; line-height: 28px; float: left; max-width: 226px; padding-top: 13px;}
+.why-aloe-ferox .title span{ display: block; clear: both; font-family: 'Gotham HTF Bold'; font-weight: bold; font-style: normal;}
+.why-aloe-ferox-image{ float: left; width: 175px; position: absolute; left: 95px; bottom: 0;}
+.why-aloe-ferox-image img{ float: left; width: 100%;}
+.aloe-ferox-text { float: left; position: relative; max-width: 577px; width: 67.932%; margin-left: 100px; padding-left:47px;  /*border-left: 1px solid #979797;*/ padding-bottom: 62px;}
+.aloe-ferox-text p{ float: left; color: #61745d; font-size: 14px;  line-height: 1.43;font-family: 'Gotham HTF Book';font-weight: normal;font-style: normal;font-stretch: normal; margin: 20px 0;}
+.aloe-ferox-text:after{ position: absolute; content: ""; left: 0; top: 0; width: 1px; height: 150px;border-left: 1px solid #979797; }
+/*=============================End  why-aloe-ferox section=========================*/
+
+/*=============================Beginnin get-to-know section=========================*/
+.get-to-know{ float: left; width: 100%; margin-top: 33px;}
+.get-to-title,.ingredient-title{ font-family: 'Gotham HTF Book';font-size: 24px;font-weight: normal;font-style: normal;line-height: 1.17;text-align: center;color: #63755f;}
+.get-to-item{ float: left;max-width: 464px; width: 46.5863453815261%; margin-left: 61px; position: relative;margin-top: 30px; padding-left: 22px;}
+.get-to-item span, .get-to-item p{float: left; width: 100%; font-size: 14px;font-family: 'Gotham HTF Book'; font-weight: 500; font-style: normal; font-style: normal;color: #61745d;font-stretch: normal; line-height: 1.43;}
+.get-to-know .get-to-item:nth-child(2){ margin-left: 0px;}
+.get-to-item p{float: left;font-weight: normal; padding: 18px 0 0;}
+.get-to-item span{ float: left; display: inline-block;font-family: 'Gotham HTF Book'; font-weight:bold; font-style: normal;}
+.get-to-know .get-to-item:nth-child(3):after{ position: absolute; content: ""; left: 0; top: 34px; width: 1px; height: 204px; border-left: 1px solid #979797;}
+.get-to-know .get-to-item:nth-child(3){ padding-left: 46px; }
+/*=============================End get-to-know section=========================*/
+/*=============================Beginning unique-best section=========================*/
+.unique-best{ float: left; width: 100%; margin-top: 115px;}
+.unique-best-image{ float: left;max-width: 488px; width: 48.99598393574297% }
+.unique-best-image img{ float: left;width:100% }
+.unique-best-text{ float: left; max-width: 438px; margin-left: 70px;}
+.unique-best-title{ float: left; width: 100%; font-family: 'Gotham HTF Book'; font-size: 24px; font-weight: normal; color: #63755f; max-width: 370px;}
+.unique-best-nav{ float: left; width: 100%; padding-top: 55px;}
+.unique-best-nav ul{ list-style: none; margin: 0; padding: 0;}
+.unique-best-nav li{ float: left; width: 100%;color: #61745d;font-family: 'Gotham HTF Book'; font-size: 14px; font-weight: normal;line-height: 18px;  margin-bottom:23px; background: url(../images/unique-dot-icon.png) no-repeat 0 5px; padding-left: 23px;}
+/*=============================End unique-best section=========================*/
+/*=============================Beginnin ingredient section=========================*/
+.ingredient-section{ float: left; width: 100%; margin-top: 40px;}
+.ingredient-title{ margin-bottom: 15px;}
+.accordin-details{ float: left; width: 100%;}
+.medicin-details{ float: left; width: 100%;}
+.medicin-details{ float: left; width: 100%; padding: 26px 36px 22px 46px; background:#e3efe1; margin-top: 15px;}
+.medicin-title{float: left; width: 100%; background-size: contain; font-size: 14px; line-height:34px; color: #61745d; font-family: 'Gotham HTF Medium'; font-weight: 500; font-style: normal; position: relative;}
+.medicin-title:after{background: url(../images/about_aloe_arrows.png) no-repeat right 0; width: 34px; height: 34px; position: absolute; right: 0; top: 0; content: ""; background-size: contain;}  
+ul.medicin-nav{list-style: none; padding: 0; float: left; width: 100%; clear: both;margin: 12px 0 25px 0; display: none;}
+.accordian-right .medicin-details:last-child ul.medicin-nav{display: block;}
+.medicin-nav li{float: left; width: 100%; font-size: 14px;font-family: 'Gotham HTF Book';font-weight: normal;font-style: normal;color: #61745d;}
+.medicin-details:nth-child(odd){margin-left: 0px}
+.medicin-title.active {background: url(../images/about_aloe_arrows2.png) no-repeat right 0; background-size: contain}
+.accordian-row-left{ float: left;max-width: 488px; width: 48.99598393574297% }
+.accordian-right{ float: left;max-width: 488px; width: 48.99598393574297%; margin-left:1.907630522088353% }
+
+/*=============================End ingredient section=========================*/
+.free-range-farming{ float: left; width: 100%; margin-top: 45px; display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap; align-items: center; padding-bottom: 43px;}
+.free-range-title{ text-align: center; width: 100%; font-size: 24px; font-weight: normal; font-style: normal; color: #63755f; line-height: 28px; padding-bottom: 25px;}
+.free-range-item{ float: left; max-width: 319px; width:32.0281124497992%; }
+.free-range-item img{ float: left;  width:100%; }
+.free-range-text{ float: left; max-width: 357px; width:35.8433734939759%;  }
+.free-range-text p{width: 100%; max-width: 257px; font-size: 14px;font-weight: normal;font-style: normal;text-align: center;color: #61745d;font-family: 'Gotham HTF Book'; margin: 0 auto; clear: both; overflow: hidden; line-height: 1.43;}
+.free-range-farming .free-range-text:nth-child(5){ max-width: 339px; width: 34.03614457831325%;}
+/*.free-range-farming .free-range-text:nth-child(5) p{ padding:81px 65px 108px 21px }*/
+
+.free-range-farming .free-range-text:nth-child(7){ max-width: 337px; width: 33.83534136546185%}
+/*.free-range-farming .free-range-text:nth-child(7) .free-range-text p{padding: 81px 40px 108px 51px;}*/
+
+
+/*==============================End  About Aloe Page ======================================*/
+.contact-hero-section{ float: left; width: 100%; margin-top: 13px; position: relative;}
+.get-in-touch{ position: absolute; left: 0; top:25.5%;width: 100%; z-index: 5}
+.get-in-touch-wrap{ margin: 0 auto; max-width: 674px; width: 67.67068273092369%; padding: 23px 33px 35px 27px; background: #6A7A64; clear: both; overflow: hidden; opacity: 1; -webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.get-in-touch img{ float: left; width: 100%;}
+.get-in-touch-details{ float: left; max-width: 200px; width: 100%; margin:28px 0 0 5.489614243323442%;}
+.get-in-touch-wrap .get-in-touch-details:nth-child(2){ max-width: 182px; width: 100%; margin-left: 0px;}
+/*.get-in-touch-wrap .get-in-touch-details:nth-child(3){ }*/
+.get-in-touch-wrap .get-in-touch-details:nth-child(4){ max-width: 158px; padding-left:15px;}
+
+.get-in-title{ width: 100%;font-size: 16px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.63; text-align: center;color: #ffffff;font-family: 'Gotham HTF Book'; font-weight: 500; font-style: normal; }
+.get-in-touch-details address{ float: left;  width: 100%;}
+.get-in-touch-details address span,.get-in-touch-details address dfn,.get-in-touch-details div,.get-in-touch-details a{ float: left;  width: 100%; display: inline-block;font-size: 16px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.63; color: #ffffff;}
+.get-in-touch-details address dfn,.get-in-touch-details > div dfn{ display: inline-block;font-style: normal; font-weight: normal;}
+.get-in-touch-details div{ margin-top: 25px;}
+.get-in-touch-details a{ float: left; width: 100%; text-decoration: none; font-weight: normal;}
+
+.contact-hero-section .common-wrap:hover .get-in-touch-wrap{ opacity: 1; -webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+
+
+
+html,.contact-page-body{height: 100%;}
+.contact-page-body .page-wrap{padding-bottom: 0;}
+.contact-page-body .head-office{padding-top: 27px;}
+.contact-page-body .footer-logo{padding-top: 10px;}
+
+/*====================================Beginning Footer Section================================*/
+.footer-section{ float: left; width: 100%;}
+.footer-logo{ float: left; width: 80px; padding-top: 34px;}
+.footer-logo img{ float: left; width: 100%;}
+.head-office{ float: right; width: auto; position: relative; font-family: 'Montserrat-Light'; font-weight: normal; font-size: 14px; line-height: 18px; color: #544e46; padding-top: 50px;}
+.head-office span{ float:left; margin-right: 10px; display:inline-block;}
+.head-office a{ float: left; display:inline-block; text-decoration: none; color: #544e46; position: relative;}
+
+.head-office a:last-child::after{ position: absolute; left: 0; width: 1px; height: 14px; content: ""; background: #544e46; top: 2px;}
+.head-office a:last-child { margin-left: 6px; padding-left: 6px;}
+.head-office a:hover{ text-decoration: underline;}
+
+/*===========================End Footer Section ======================================================
+
+
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    .main-header{position: fixed; top: 1px; margin-top: -1px; background: #ffffff; z-index: 99;}
+    .page-wrap{padding-bottom: 30px;}
+    .main-logo{float: left; width: 110px; height: 70px; margin-top: -10px;}
+    .phone-nav{display: block;}
+    .top-social-icon,.card-section{position: relative; left: auto; top: auto; text-align: center; clear: both; margin: 0 auto; float: none; overflow: hidden;}
+    .top-social-icon{padding-top: 20px;}
+    .card-section{padding-top: 10px;}
+    .card-section a{float: none; max-width: 100px; padding-left: 20px;}
+    .main-nav ul{text-align: center;}
+    .main-nav ul li{width: 100%; float: left; margin: 3px 0;}
+    .main-nav li a{float: none;}
+    .main-nav{padding: 20px 0; display: none;}
+    
+    .page-details-section{margin-top: 0;}
+    .slider-caption{width: 100%; padding: 0 15px;}
+    .slider-caption h2{font-size: 28px; line-height: 35px;}
+    .slider-caption p{padding-top: 15px;}
+    .top-seller-item,.top-seller-item:nth-child(4){width: 139px; margin: 2%; max-width: 100%; }
+    .top-seller-item:first-child{margin: 0}
+    .top-seller-item:nth-child(odd){margin-right: 0}
+    .top-seller-item:nth-child(even){margin-left: 0}
+    .top-seller-title,.discover-title{padding-bottom: 20px;}
+    
+    .top-sellers{padding: 30px 15px 0; float: none; margin: 0 auto; clear: both; max-width: 320px;}
+    .discover-aloe-unique{margin-top: 30px;}
+    .discover-item-wrap{max-width: 100%; width: 100%; margin: 10px 0;}
+    .vision-title{padding-top: 15px;}
+    .unique-vision p{padding-top: 10px;}
+    .footer-logo{display: none;}
+    .head-office{padding-top: 30px; text-align: center; float: none;}
+    .head-office span,.head-office a{float: none;}
+    .head-office a:last-child{padding: 10px 0 0; margin: 0;}
+    .head-office a:last-child::after{display: none;}
+    
+    
+    .why-aloe,.about-us-right,.get-in-touch,.get-in-touch-wrap{ width: 100%; margin-left: 0px;}
+    .get-in-touch { position: relative; top: 20px; display: block !important; clear: both; overflow: hidden; }
+
+    .get-in-touch-details{ margin-left: 0px;}
+    .get-in-touch-wrap .get-in-touch-details:nth-child(4){ padding-left: 0px; }
+    .get-in-touch-wrap{opacity: 1!important }
+
+    .about-right-title{padding-top: 35px;}
+    .our-mission-value{padding: 20px 15px 30px;}
+    .mission-value-text{margin-top: 10px;}
+    .mission-value-text h4,.announce-tex-wrap h4, .aloe-unique-feature h4,.shop-now-products h4, .manufacturing-nav h4,.get-to-title, 
+    .ingredient-title,.unique-best-title,.free-range-title{font-size: 22px;}
+    .our-heritage-section{padding: 0 15px;}
+    .heritage-image{float: left; width: 100%; max-width: 100%; margin: 0;}
+    .heritage-item-image{float: none; margin: 0 auto; clear: both; overflow: hidden;}
+    .heritage-content{margin: 0; width: 100%; max-width: 100%; padding-top: 10px;}
+    .aloe-unique-feature{padding: 30px 15px 20px; margin-top: 30px;}
+    .shop-now-section{padding: 0 15px;}
+    .shop-now-announce{float: none; width: 100%; margin: 0 auto; clear: both;}
+    .shop-now-products{margin: 0; width: 100%; padding-top: 10px;}
+    .manufacturin-quality-section{margin-top: 30px; padding: 0 15px;}
+    .manufactuing-nav{margin: 0; width: 100%; /*padding-bottom: 20px;*/}
+    .quality-image{float: none; width: 100%; margin: 0 auto; clear: both;}
+    .mission-value-text p{margin-top: 10px;}
+    .manufacturing-nav{padding-top: 15px; margin: 0; width: 100%; max-width: 100%;}
+    .manufacturing-nav h4{padding-bottom: 10px;}
+    .mask-image,.about-right-image{max-width: 319px; float: none; margin: 0 auto; clear: both; overflow: hidden; padding: 15px 0;}
+
+    .discover-item-wrap:nth-child(1),.discover-image,.discover-sub-item{margin-left: 0px; float: none; max-width: 319px; margin: 0 auto; clear: both; overflow: hidden; }
+    .discover-image,.discover-sub-item{padding-top: 15px;}
+    .discover-item-wrap{margin: 0;}
+    .aside-product-accordian{width: 100%; max-width: 100%;}
+    .product-right-section{margin: 0; width: 100%; padding-top: 15px;}
+    .aside-product{max-width: 220px; clear: both;}
+    .page-details-section{padding: 0 15px;}
+    .aloe-tab-nav ul{width: 100%; text-align: center;}
+    .aloe-tab-nav ul li{float: none; margin: 5px auto 0; clear: both; overflow: hidden;}
+    .product-right-section .top-sellers{padding-right: 0; padding-left: 0;}
+    .product-top-sellers .top-seller-item{width: 48%; margin: 2%; max-width: 100%;}
+    .top-seller-item:nth-child(odd){margin-right: 0;}
+    .top-seller-item:nth-child(even){margin-left: 0;}
+    .about-us-right{padding-top: 15px;}
+    .region-item{width: 100%;}
+    .thrive-image{width: 100%; margin: 0 auto; clear: both; overflow: hidden; padding-top: 15px;}
+    .why-aloe-ferox {width: 100%; padding: 25px 15px 20px;}
+    .why-aloe-ferox-image{float: none; margin: 0 auto; clear: both;}
+    .aloe-ferox-text{width: 100%; padding: 0; margin: 0;}
+    .aloe-ferox-text:after,.get-to-know .get-to-item:nth-child(3):after{display: none;}
+    .get-to-item{width: 100%; max-width: 100%; margin-top: 15px;}
+    .get-to-know .get-to-item:nth-child(3){margin-left: 0; padding-left: 0;}
+    
+    .unique-best,.ingredient-section,.free-range-farming{margin-top: 30px;}
+    .unique-best-image{float: none; width: 100%; margin: 0 auto; clear: both; overflow: hidden;}
+    .unique-best-text{margin: 0; width: 100%; max-width: 100%; padding-top: 25px;}
+    .unique-best-nav li{margin-bottom: 10px;}
+    .unique-best-title{height: auto;}
+    .unique-best-nav{padding-top: 15px;}
+    .accordian-row-left,.accordian-right{width: 100%; max-width: 100%; margin: 0;}
+    .medicin-details{padding: 15px;}
+    .medicin-nav li{margin: 3px 0; line-height: 18px;}
+    .free-range-item{width: 100%; float: none; margin: 0 auto; clear: both; overflow: hidden;}
+    .free-range-text,.free-range-farming .free-range-text:nth-child(5),.free-range-farming .free-range-text:nth-child(7){width: 100%; max-width: 100%; padding: 15px 0;}
+    .free-range-text p,.free-range-farming .free-range-text:nth-child(5) p{padding: 0; font-size: 16px; line-height: 20px; max-width: 300px; margin: 0 auto;}
+    .get-in-touch-details div span{width: 100%; float: left;}
+    
+    .social-wash-right{width: 100%; max-width: 100%; margin: 0;}
+    .facial-image{float: none; margin: 0 auto; clear: both; overflow: hidden;}
+    .facial-150ml-bottle{width: 100%; margin: 0; padding-top: 15px; max-width: 100%;}
+    .washing-content-section{padding-top: 15px;}
+    .leaf-extraxt-nav ul, .dea-nav ul, .tocophery-nav ul{float: left; width: 100%; }
+    .dea-nav ul,.tocophery-nav ul,.washing-content-section p{padding-top: 10px;}
+    .page-details-section,.contact-hero-section{padding-top: 60px;}
+    
+    .top-seller-item, .top-seller-item:nth-child(4){width: 48%; }
+    .get-to-item{padding-left: 0;}
+    .medicin-title{padding-right: 40px;}
+    .free-range-farming,.region-section:nth-child(3){padding-bottom: 0;}
+    .contact-page-body .page-wrap{padding-bottom: 20px;}
+    .slider-section ol{display: none;}
+    .slider-caption{position: relative; left: auto; top: auto; bottom: auto; -webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0); float: left; width: 100%; padding-top: 20px;}
+    .slider-caption h2, .slider-caption p{color: #71806C;}
+    .slider-caption h2{font-size: 25px;}
+    .slider-caption p{font-size: 16px;}
+    .our-heritage-section{margin-top: 0; padding-top: 20px;}
+    .heritage-image{padding-top: 0;}
+    .heritage-item-image{padding: 5px 0;}
+    .contact-page-body .footer-section{padding-bottom: 25px;}
+    .why-aloe-ferox-image{display: none;}
+    .overlay-text{width: 100%; padding: 0 15px; -webkit-transform: translate(0); -moz-transform: translate(0); transform: translate(0); left: 0; text-align: center; top: 40%;}
+    .why-aloe-ferox .title{font-size: 20px;}
+    .distributers-right .about-right-title{padding-top: 55px;}
+    .region-item{text-align: left; max-width: 175px;}
+    
+}
+
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .get-in-touch-wrap .get-in-touch-details:nth-child(2),.get-in-touch-details,.get-in-touch-wrap .get-in-touch-details:nth-child(4){max-width: 100%; width: 50%; padding-right: 10px;}
+    .get-in-touch-wrap .get-in-touch-details:nth-child(4){clear: both;}
+    .contact-page-body .page-wrap{min-height: 100%;}
+    .main-header{max-height: 260px; overflow-y: auto;}
+    .overlay-text{top: 48%;}
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+
+	input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    .page-wrap{padding-bottom: 40px;}	
+    .main-nav ul{text-align: center;}
+    .main-nav li{margin: 0 7px; float: none; display: inline-block;}
+    .main-nav li:last-child{margin: 0;}
+    .main-nav li a{font-size: 13px;}
+    .top-sellers{padding: 0 15px;}
+    .top-seller-item:nth-child(4){width: 13.376884%;}
+    .footer-section,.discover-aloe-unique{padding: 0 15px;}
+
+    .discover-aloe-unique .discover-item-wrap:nth-child(3) .discover-overlay{ left:10px; }
+    .why-aloe {float: left; width: 30%;padding-left: 15px;}
+    .why-nav li a{ padding:5px 15px;  font-size: 14px; line-height: 22px; }
+    .our-heritage-section{padding-bottom: 19px;}
+    .aloe-unique-feature{ width:auto; float: none; clear: both; overflow:hidden; margin: 0px 15px 0; padding:38px 90px 16px 20px; }
+
+    .shop-now-section,.manufacturin-quality-section{ padding: 0 15px; }
+    .manufacturing-nav {width: 50.036%;}
+    .quality-image {width: 44.028%;}
+
+    .why-aloe-ferox{ clear: both; margin:19px 15px 0; padding: 49px 20px 41px 20px; width: auto; overflow:hidden;}
+
+    .why-aloe-ferox-image{ width: 180px }
+    .get-to-know,.unique-best,.ingredient-section,.free-range-farming,.product-top,.region-section,.contact-hero-section{ padding:0 15px; }
+    .unique-best{ margin-top: 58px;}
+    .unique-best-nav li{ margin-bottom: 20px }
+
+    .aside-product-accordian{width:19.06425702811245%;}
+    .product-right-section{ width:79.1285140562249%;}
+    .aloe-tab-nav li{ padding: 13px 15px }
+    .product-top-sellers .top-seller-item { width: 24.388753%; }
+    .region-item{ padding-left: 10px; }
+    .contact-hero-section img{ width: 100%; float: left; }
+    .get-in-touch { top: 20%; }
+    .get-in-touch-wrap { width: 100%; padding: 15px 15px 15px 15px; }
+    .social-wash-right { width: 71.485944%; margin-left: 8.44979919678715%}
+    
+    
+    .contact-page-body .page-wrap{min-height: 100%; margin-bottom: -70px;}
+    .heritage-item-image{float: none; margin: 0 auto; clear: both; overflow: hidden; padding: 5px 0;}
+    .region-item span, .region-item a{font-size: 15px;}
+    
+    
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 996px) and (max-width: 1024px) {
+	input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    .top-seller-item{width: 12.16381909547739%}
+    .region-item{padding-left: 45px;}
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
